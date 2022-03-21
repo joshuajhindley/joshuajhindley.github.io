@@ -1,141 +1,180 @@
 body {
-	background-color: #1F2327;
-	display: block;
+  background-color: #1f2327;
+  display: block;
 }
 
 h1.header {
-	text-align: center;
-	font-family: sans-serif;
-	color: #ddd;
-	margin-top: 6rem;
-	margin-bottom: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  color: #ddd;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 
 .container {
   place-items: center;
-	display: flex;
-	justify-content: center;
-	margin: 3rem;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .certificate {
-	float: left;
+  float: left;
   margin: 1rem;
 }
 
 button {
-	color: white;
-	margin-left: 0;
-	margin-right: 0;
-	background-color: #4CAF50;
-	border: 1px solid black;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 24px;
-	outline: none;
-	cursor: pointer;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #4caf50;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  outline: none;
+  cursor: pointer;
 }
 
 ul.navbar {
-	list-style-type: none;
-	max-width: 1200px;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
-	overflow: hidden;
-	background-color: #FFF;
+  list-style-type: none;
+  max-width: 1200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 li {
-	float: left;
-	display: inline-block;
-	color: white;
-	width: calc(100%/6); /*TODO change this based on page size*/
-	height: 80px;
-	margin: 0;
+  float: left;
+  display: inline-block;
+  color: white;
+  width: calc(100% / 6); /*TODO change this based on page size*/
+  height: 80px;
+  margin: 0;
 }
 
 .here {
-	background-color: #008CBA;
+  background-color: #008cba;
 }
 
-button:hover  {
-	border: 0.25rem solid #fff;
+button:hover {
+  border: 0.25rem solid #fff;
 }
 
 table {
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	text-align: center;
-	font-family: sans-serif;
-	margin-top: 3rem;
-	margin-left: auto;
-	margin-right: auto;
-	color: #ddd;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ddd;
 }
 
-table, td {
-	border: 1px solid #bbb;
-	height: 20px;
-	border-collapse: collapse;
+table,
+td {
+  border: 1px solid #bbb;
+  height: 20px;
+  border-collapse: collapse;
 }
 
 td {
-	padding-left: 20px;
-	padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .note {
-	text-align: center;
-	font-family: sans-serif;
-	color: #ddd;
+  text-align: center;
+  font-family: sans-serif;
+  color: #ddd;
 }
 
 .link {
-	color: #ddd;
+  color: #ddd;
 }
 
-object, embed {
-	width: 80%;
-	max-width: 1000px;
-	height: 900px;
-	margin-top: 3rem;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+object,
+embed {
+  width: 80%;
+  max-width: 1000px;
+  height: 900px;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .split {
-	width: 80%;
-	max-width: 1200px;
-	margin-top: 3rem;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  overflow: hidden;
 }
 
 img {
-	width: 35%;
-	float: left;
+  width: 35%;
+  float: left;
 }
 
 .aboutme {
-	width: 60%;
-	font-family: sans-serif;
-	color: #ddd;
-	float: left;
-	margin-left: 5%;
+  width: 60%;
+  font-family: sans-serif;
+  color: #ddd;
+  float: left;
+  margin-left: 5%;
 }
 
-h2, h3 {
-	font-weight: normal;
-	margin: 10px;
+h2,
+h3 {
+  font-weight: normal;
+  margin: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  h1.header {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  img {
+    display: none;
+  }
+
+  .aboutme {
+    width: 100%;
+    margin: 0;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  li {
+    width: calc(100% / 3);
+    height: 60px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
 }

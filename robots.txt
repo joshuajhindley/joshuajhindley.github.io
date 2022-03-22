@@ -1,2 +1,3 @@
+Sitemap: https://hindley.me/sitemap.xml
 User-agent: *
 Disallow:

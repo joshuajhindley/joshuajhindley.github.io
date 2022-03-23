@@ -177,4 +177,12 @@ h3 {
   .container {
     flex-wrap: wrap;
   }
+
+  .testdome-certificate-stamp span.testdome-certificate-name {
+    font-size: 16px;
+  }
+
+  .testdome-certificate-stamp span {
+    font-size: 12px;
+  }
 }

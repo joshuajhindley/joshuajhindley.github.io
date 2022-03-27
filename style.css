@@ -105,10 +105,12 @@ td {
 }
 
 object,
-embed {
+embed,
+iframe {
   width: 80%;
   max-width: 1000px;
   height: 900px;
+  /*TODO change height*/
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;

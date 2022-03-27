@@ -1,6 +1,20 @@
+/* TODO fix this up and reformat this file */
+/* change some of these to use vh and/or vw */
+
+html {
+  height: 100%;
+}
+
 body {
   background-color: #1f2327;
   display: block;
+  height: calc(100% - 112px);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    height: calc(100% - 64px);
+  }
 }
 
 h1.header {
@@ -9,6 +23,12 @@ h1.header {
   color: #ddd;
   margin-top: 6rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 360px) {
+  h1.header {
+    font-size: 16px !important;
+  }
 }
 
 .container {
@@ -55,7 +75,7 @@ ul.navbar {
 
 li {
   float: left;
-  display: inline-block;
+  display: block;
   color: white;
   width: calc(100% / 6); /*TODO change this based on page size*/
   height: 80px;
@@ -107,14 +127,21 @@ td {
 object,
 embed,
 iframe {
-  width: 80%;
-  max-width: 1000px;
-  height: 900px;
-  /*TODO change height*/
+  width: 925px;
+  height: 73%;
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+@media screen and (max-width: 925px) {
+  iframe {
+    width: 100%;
+    height: 70%;
+    min-height: min(94vh, 500px);
+    margin-top: 1.5rem;
+  }
 }
 
 .split {

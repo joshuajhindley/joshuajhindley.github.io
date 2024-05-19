@@ -31,21 +31,6 @@ h1.header {
   }
 }
 
-.container {
-  place-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 3rem;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.certificate {
-  float: left;
-  margin: 1rem;
-}
-
 button {
   color: white;
   margin-left: 0;
@@ -90,40 +75,6 @@ button:hover {
   border: 0.25rem solid #fff;
 }
 
-table {
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  font-family: sans-serif;
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: #ddd;
-}
-
-table,
-td {
-  border: 1px solid #bbb;
-  height: 20px;
-  border-collapse: collapse;
-}
-
-td {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.note {
-  text-align: center;
-  font-family: sans-serif;
-  color: #ddd;
-}
-
-.link {
-  color: #ddd;
-}
-
 object,
 embed,
 iframe {
@@ -144,27 +95,16 @@ iframe {
   }
 }
 
-.split {
-  width: 80%;
-  max-width: 1200px;
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  overflow: hidden;
-}
-
-img {
-  width: 35%;
-  float: left;
-}
-
 .aboutme {
   width: 60%;
   font-family: sans-serif;
   color: #ddd;
-  float: left;
-  margin-left: 5%;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  flex-direction: column;
+  text-align: center;
 }
 
 h2,
@@ -187,10 +127,6 @@ h3 {
     font-size: 18px;
   }
 
-  img {
-    display: none;
-  }
-
   .aboutme {
     width: 100%;
     margin: 0;
@@ -203,16 +139,5 @@ h3 {
   li {
     width: calc(100% / 3);
     height: 60px;
-  }
-  .container {
-    flex-wrap: wrap;
-  }
-
-  .testdome-certificate-stamp span.testdome-certificate-name {
-    font-size: 16px !important;
-  }
-
-  .testdome-certificate-stamp span {
-    font-size: 12px !important;
   }
 }
